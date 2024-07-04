@@ -1,5 +1,3 @@
-console.log("Rock, Paper, Scissors, Shoot!")
-
 /** CONSTANTS **/ 
 const PAPER = "paper";
 const SCISSORS = "scissors";
@@ -17,8 +15,8 @@ let computerScore = 0;
  * @return {number} A random integer between min and max
  */
 function getRandomInt(min, max) {
-    let min = Math.ceil(min);
-    let max = Math.floor(max);
+    min = Math.ceil(min);
+    max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -99,4 +97,5 @@ function playGame() {
 }
 
 //** MAIN **/
+console.log("Rock, Paper, Scissors, Shoot!")
 playGame();
